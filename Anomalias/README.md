@@ -1,7 +1,7 @@
 ## Resumen
 
 Primero se visualiza los datos en un plano $R^2$ tomando cada grupo por un color diferente
-![imagen]("vista.png")
+![imagen](https://github.com/crissthiandi/Sistemas-Complejos/blob/master/Anomalias/vista.png)
 
 Se calcula la matriz de distancias y se crea un resumen por elemento con su vecino más cercano y su distancia.
 
@@ -42,13 +42,13 @@ Luego se calcula el cociente $V2/V1$. La siguiente tabla los resume en la variab
 
 Graficando los ejes cordenada 1 y 2 pensando en la **existencia de orden** al tomar los datos, podemos ver lo siguientes:
 
-![imagen]("por_cordenada.png")
+![imagen](https://github.com/crissthiandi/Sistemas-Complejos/blob/master/Anomalias/por_cordenada.png)
 
 Agregandole ruido al grafico anterior podemos ver con más detalle los tamaños y colores de los ratio:
 
-![imagen]("por_cordenada_ruidizado.png")
+![imagen](https://github.com/crissthiandi/Sistemas-Complejos/blob/master/Anomalias/por_cordenada_ruidizado.png)
 
 Un grafico por valores de ratio donde cada punto es identificable nos puede mostrar que datos tienen ratios muy diferentes o anomalos.
 
-![imagen]("por_ratio.png")
+![imagen](https://github.com/crissthiandi/Sistemas-Complejos/blob/master/Anomalias/por_ratio.png)
 
