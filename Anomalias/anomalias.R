@@ -27,7 +27,7 @@ minimo=distancia_df %>%
   group_by(colum) %>%
   summarise(vecino_cercano=min(value),cordenada=which.min(value)+1)
 minimo
-knitr::kable(head(minimo))
+
 #diametro
 diametro=distancia_df %>%
   filter(colum!=filas) %>%
@@ -44,27 +44,20 @@ minimo_2=distancia_df %>%
   summarise(fila=which.min(value)+1,vecino_cercano_2=min(value))
 minimo_2
 
-knitr::kable(head(minimo_2))
-
 
 Ratio=minimo %>%
   left_join(minimo_2) %>%
   mutate(ratio=vecino_cercano_2/vecino_cercano)
 Ratio
 
-knitr::kable(head(Ratio))
-
 
 #grafico de ratios
 ggplot(Ratio,aes(colum,cordenada,size=ratio,color=ratio))+
   geom_point()#+geom_jitter(width = 10, height = 10)
 
-ggsave(filename = "por_cordenada_ruidizado.png" )
-ggsave(filename = "por_cordenada.png" )
 
 #buscador de anomalos
 ggplot(Ratio,aes(colum,ratio))+
   geom_point()+
   geom_text(aes(label=cordenada))
 
-ggsave(filename = "por_ratio.png" )
