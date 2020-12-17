@@ -7,11 +7,11 @@ Codigo que soporta la presentación grafica de automatas de una dimensión o dos
 
 ### Manual documentatorio para unidimencional
 
-El archivo [!codigo](automata.ipynb) genera automatas unidimencionales como los ya hechos en el repositorio, alguno de ellos:
+El archivo ![codigo](automata.ipynb) genera automatas unidimencionales como los ya hechos en el repositorio, alguno de ellos:
 
-[!imagen](RULE-110.png)
+![imagen](RULE-110.png)
 
-[!imagen](RULE-30-1.png)
+![imagen](RULE-30-1.png)
 
 ## Detección de anomalias
 
